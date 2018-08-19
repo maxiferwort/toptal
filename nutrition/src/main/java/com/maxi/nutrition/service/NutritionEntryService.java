@@ -67,4 +67,8 @@ public class NutritionEntryService {
     return nutritionEntryRepository.findByIdAndUserId(nutritionId, userId).orElseThrow(() ->
         new ResourceNotFoundException("Nutrition entry not found for id: " + nutritionId));
   }
+
+  public void deleteEntry(NutritionEntry nutritionEntry) {
+    nutritionEntryRepository.delete(nutritionEntry);
+  }
 }

@@ -14,6 +14,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -49,6 +50,14 @@ public class NutritionController {
   public NutritionEntry findById(@PathVariable Long userId, @PathVariable Long nutritionId) {
     return nutritionEntryService.findByIdAndUserId(nutritionId, userId);
   }
+
+  @PreAuthorize("@authenticationfacade.isAdministrator(#userId) or @authenticationfacade.isOwner(#userId)")
+  @DeleteMapping("/users/{userId}/nutrition/{nutritionId}")
+  public void deleteNutritionEntry(@PathVariable long userId, @PathVariable Long nutritionId) {
+    NutritionEntry nutritionEntry = nutritionEntryService.findByIdAndUserId(nutritionId, userId);
+    nutritionEntryService.deleteEntry(nutritionEntry);
+  }
+
 
   @ExceptionHandler({HttpMessageNotReadableException.class})
   public ResponseEntity handleHttpMessageNotReadableException(HttpServletRequest request,
