@@ -102,14 +102,14 @@ public class User {
   @Size(groups = {
       OnRegister.class}, min = 1, max = 40, message = "First name should have min 1 and max 40 characters.")
   @Pattern(groups = {
-      OnRegister.class}, regexp = "^[a-zA-Z]{5,40}", message = "First name can only consist of letters")
+      OnRegister.class}, regexp = "^[a-zA-Z]{1,40}", message = "First name can only consist of letters")
   private String firstName;
 
   @NotBlank(groups = {OnRegister.class}, message = "Last name must not be blank.")
   @Size(groups = {
       OnRegister.class}, min = 1, max = 40, message = "Last name should have min 1 and max 40 characters.")
   @Pattern(groups = {
-      OnRegister.class}, regexp = "^[a-zA-Z]{5,40}", message = "Last name can only consist of letters")
+      OnRegister.class}, regexp = "^[a-zA-Z]{1,40}", message = "Last name can only consist of letters")
   private String lastName;
 
   @Positive(groups = {OnUpdate.class, OnCreate.class, OnRegister.class})
