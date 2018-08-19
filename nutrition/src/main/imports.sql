@@ -11,6 +11,7 @@ CREATE TABLE users (
   enabled            BOOLEAN      NOT NULL DEFAULT FALSE,
   email_confirmation BOOLEAN      NOT NULL DEFAULT FALSE,
   attempts           INTEGER      NOT NULL DEFAULT 0,
+  expected_number_calories INTEGER NOT NULL DEFAULT 2000,
   PRIMARY KEY (user_id),
   UNIQUE (username),
   UNIQUE (email)
