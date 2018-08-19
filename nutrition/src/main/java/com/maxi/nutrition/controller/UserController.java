@@ -5,8 +5,6 @@ import com.maxi.nutrition.service.UserService;
 import com.maxi.nutrition.validator.groups.OnCreate;
 import com.maxi.nutrition.validator.groups.OnUpdate;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -15,6 +13,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -32,13 +31,13 @@ public class UserController {
   @PreAuthorize("@authenticationfacade.isAdministrator(#userId) or @authenticationfacade.isOwner(#userId)")
   @PutMapping("/users/{userId}")
   public void updateUser(@Validated({OnUpdate.class}) @RequestBody User user,
-      @PathVariable Long userId) {
+      @PathVariable Long userId, @RequestHeader String Authorization) {
     userService.updateUser(user, userId);
   }
 
   @PreAuthorize("@authenticationfacade.isAdministrator(#userId) or @authenticationfacade.isOwner(#userId)")
   @GetMapping("/users/{userId}")
-  public User getUser(@PathVariable Long userId) {
+  public User getUser(@PathVariable Long userId, @RequestHeader String Authorization) {
     return userService.findUserById(userId);
   }
 
@@ -49,7 +48,7 @@ public class UserController {
 
   @PreAuthorize("@authenticationfacade.isAdministrator(#userId) and !@authenticationfacade.isOwner(#userId)")
   @DeleteMapping("/users/{userId}")
-  public void deleteUser(@PathVariable Long userId){
+  public void deleteUser(@PathVariable Long userId, @RequestHeader String Authorization) {
     User user = userService.findUserById(userId);
     userService.deleteById(userId);
   }

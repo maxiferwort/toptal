@@ -14,6 +14,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -26,7 +27,8 @@ public class InviteController {
 
   @PreAuthorize("hasRole('ADMIN')")
   @PostMapping("/invite")
-  public void invite(@Email @NotEmpty @NotUsedEmail @RequestParam("email") String email) {
+  public void invite(@Email @NotEmpty @NotUsedEmail @RequestParam("email") String email,
+      @RequestHeader String Authorization) {
     userService.invite(email);
   }
 

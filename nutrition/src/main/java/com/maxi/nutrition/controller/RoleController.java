@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -23,19 +24,21 @@ public class RoleController {
 
   @PreAuthorize("@authenticationfacade.isAdministrator(#userId) and !@authenticationfacade.isOwner(#userId) and @authenticationfacade.canAddRole(#role)")
   @PostMapping("/users/{userId}/roles")
-  public void addRole(@PathVariable Long userId, @RequestParam @NotEmpty String role) {
+  public void addRole(@PathVariable Long userId, @RequestParam @NotEmpty String role,
+      @RequestHeader String Authorization) {
     roleService.createRole(userId, role);
   }
 
   @PreAuthorize("@authenticationfacade.isAdministrator(#userId) or @authenticationfacade.isOwner(#userId)")
   @GetMapping("/users/{userId}/roles")
-  public List<Role> getRoles(@PathVariable Long userId) {
+  public List<Role> getRoles(@PathVariable Long userId, @RequestHeader String Authorization) {
     return roleService.findByUserId(userId);
   }
 
   @PreAuthorize("@authenticationfacade.isAdministrator(#userId) and !@authenticationfacade.isOwner(#userId)")
   @DeleteMapping("/users/{userID}/roles")
-  public void deleteRole(@PathVariable Long userId, @RequestParam @NotEmpty String role) {
+  public void deleteRole(@PathVariable Long userId, @RequestParam @NotEmpty String role,
+      @RequestHeader String Authorization) {
     roleService.deleteRole(userId, role);
   }
 

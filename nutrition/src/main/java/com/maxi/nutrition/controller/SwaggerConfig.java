@@ -29,8 +29,8 @@ public class SwaggerConfig {
 
   private ApiInfo apiInfo() {
     return new ApiInfo(
-        "Jogging REST API",
-        "Jogging REST API.",
+        "Nutrition REST API",
+        "Nutrition REST API.",
         "1.0.0",
         "Terms of service",
         new Contact("Maximiliano Fernandez Wortman", null, "maxifwortman@gmail.com"),

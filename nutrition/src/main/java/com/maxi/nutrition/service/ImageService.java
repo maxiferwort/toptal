@@ -7,6 +7,7 @@ import java.nio.file.Paths;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
+import org.springframework.data.rest.webmvc.ResourceNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -42,7 +43,12 @@ public class ImageService {
   }
 
   public Resource getProfilePicture(Long userId) {
-    return resourceLoader.getResource("file:" + UPLOAD_ROOT + "/IMAGE_USER_ID_" + userId);
+    if (Files.exists(Paths.get("file:" + UPLOAD_ROOT + "/IMAGE_USER_ID_" + userId))) {
+      return resourceLoader.getResource("file:" + UPLOAD_ROOT + "/IMAGE_USER_ID_" + userId);
+    } else {
+      throw new ResourceNotFoundException("Image not found for userId " + userId);
+    }
   }
+
 
 }

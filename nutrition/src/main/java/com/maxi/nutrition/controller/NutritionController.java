@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -34,26 +35,29 @@ public class NutritionController {
   @PreAuthorize("@authenticationfacade.isAdministrator(#userId) or @authenticationfacade.isOwner(#userId)")
   @PostMapping("/users/{userId}/nutrition")
   public Long addNutritionEntry(@Valid @RequestBody NutritionEntry nutritionEntry,
-      @PathVariable Long userId) {
+      @PathVariable Long userId, @RequestHeader String Authorization) {
     User user = userService.findUserById(userId);
     return nutritionEntryService.createNutritionEntry(nutritionEntry, userId);
   }
 
   @PreAuthorize("@authenticationfacade.isAdministrator(#userId) or @authenticationfacade.isOwner(#userId)")
   @GetMapping("/users/{userId}/nutrition")
-  public Page<NutritionEntry> findEntriesById(@PathVariable Long userId, Pageable pageable) {
+  public Page<NutritionEntry> findEntriesById(@PathVariable Long userId, Pageable pageable,
+      @RequestHeader String Authorization) {
     return nutritionEntryService.findByUserId(userId, pageable);
   }
 
   @PreAuthorize("@authenticationfacade.isAdministrator(#userId) or @authenticationfacade.isOwner(#userId)")
   @GetMapping("/users/{userId}/nutrition/{nutritionId}")
-  public NutritionEntry findById(@PathVariable Long userId, @PathVariable Long nutritionId) {
+  public NutritionEntry findById(@PathVariable Long userId, @PathVariable Long nutritionId,
+      @RequestHeader String Authorization) {
     return nutritionEntryService.findByIdAndUserId(nutritionId, userId);
   }
 
   @PreAuthorize("@authenticationfacade.isAdministrator(#userId) or @authenticationfacade.isOwner(#userId)")
   @DeleteMapping("/users/{userId}/nutrition/{nutritionId}")
-  public void deleteNutritionEntry(@PathVariable long userId, @PathVariable Long nutritionId) {
+  public void deleteNutritionEntry(@PathVariable long userId, @PathVariable Long nutritionId,
+      @RequestHeader String Authorization) {
     NutritionEntry nutritionEntry = nutritionEntryService.findByIdAndUserId(nutritionId, userId);
     nutritionEntryService.deleteEntry(nutritionEntry);
   }

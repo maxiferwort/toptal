@@ -13,7 +13,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.HttpMethod;
 import org.springframework.security.access.hierarchicalroles.RoleHierarchy;
 import org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -88,21 +87,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
   @Override
   protected void configure(HttpSecurity http) throws Exception {
-    http.csrf().disable().authorizeRequests()
-        .antMatchers(HttpMethod.POST, "/signup").permitAll()
-        .antMatchers(HttpMethod.GET, "/confirm").permitAll()
-        .antMatchers(HttpMethod.POST, "/login").permitAll()
-        .antMatchers(HttpMethod.GET, "/users/{userId}")
-        .access(" hasAnyRole('ADMIN','USER_MANAGER') or @authenticationfacade.isOwner(#userId)")
-        .antMatchers(HttpMethod.DELETE, "/users/{userId}")
-        .access(" hasAnyRole('ADMIN','USER_MANAGER') and !@authenticationfacade.isOwner(#userId)")
-        .antMatchers(HttpMethod.PUT, "/users/{userId}")
-        .access("hasAnyRole('ADMIN','USER_MANAGER') or @authenticationfacade.isOwner(#userId)")
-        .antMatchers(HttpMethod.GET, "/users")
-        .access("hasAnyRole('ADMIN','USER_MANAGER')")
-        .antMatchers(HttpMethod.POST, "/invite")
-        .access("hasRole('ADMIN')")
-        .and()
+    http.csrf().disable()
         .sessionManagement()
         .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
         .and()

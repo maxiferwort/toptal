@@ -23,6 +23,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -38,7 +39,7 @@ public class FileUploadController {
   @PreAuthorize("@authenticationfacade.isAdministrator(#userId) or @authenticationfacade.isOwner(#userId)")
   @PostMapping("/users/{userId}/picture")
   public void updatePhoto(@PathVariable Long userId,
-      @RequestBody @NotNull @ValidContent MultipartFile file)
+      @RequestBody @NotNull @ValidContent MultipartFile file, @RequestHeader String Authorization)
       throws IOException {
     imageService.createImage(userId, file);
   }
@@ -46,7 +47,7 @@ public class FileUploadController {
   @PreAuthorize("@authenticationfacade.isAdministrator(#userId) or @authenticationfacade.isOwner(#userId)")
   @GetMapping("/users/{userId}/picture")
   public ResponseEntity<Resource> findPictureByUserId(
-      HttpServletRequest request, @PathVariable Long userId)
+      HttpServletRequest request, @PathVariable Long userId, @RequestHeader String Authorization)
       throws IOException {
     Resource file = imageService.getProfilePicture(userId);
     String contentType = null;
@@ -64,7 +65,7 @@ public class FileUploadController {
 
   @PreAuthorize("@authenticationfacade.isAdministrator(#userId) or @authenticationfacade.isOwner(#userId)")
   @DeleteMapping("/users/{userId}/picture")
-  public void deleteImage(@PathVariable Long userId) throws IOException {
+  public void deleteImage(@PathVariable Long userId, @RequestHeader String Authorization) throws IOException {
     imageService.deletePicture(userId);
   }
 
