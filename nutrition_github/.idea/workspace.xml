@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f3514b5-ea0c-45d5-824d-0a81b1bbb231" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/controller/FileUploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/controller/FileUploadController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/controller/InviteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/controller/InviteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/controller/NutritionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/controller/NutritionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/controller/RoleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/controller/SearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/controller/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/controller/SwaggerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nutrition/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../nutrition/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/security/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/service/ImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/service/ImageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/../nutrition/target/" />
@@ -72,10 +62,10 @@
     <session id="-144802242">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -88,7 +78,7 @@
           <entry key="user_roles" value="1" />
           <entry key="users" value="1" />
           <entry key="verification_tokens" value="1" />
-          <entry key="xml" value="2" />
+          <entry key="xml" value="3" />
           <entry key="yaml" value="1" />
         </counts>
       </usages-collector>
@@ -101,7 +91,7 @@
           <entry key="Properties" value="1" />
           <entry key="SQL" value="1" />
           <entry key="Scratch" value="1" />
-          <entry key="XML" value="2" />
+          <entry key="XML" value="3" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
@@ -132,19 +122,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/controller/NutritionController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/controller/SwaggerConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+            <state relative-caret-position="240">
+              <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -152,8 +133,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/exception/GlobalExceptionHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+            <state relative-caret-position="345">
+              <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -161,8 +142,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="555">
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
             </state>
           </provider>
         </entry>
@@ -170,7 +151,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/controller/RegisterController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-70">
+            <state relative-caret-position="345">
               <caret line="38" column="80" selection-start-line="38" selection-start-column="80" selection-end-line="38" selection-end-column="80" />
             </state>
           </provider>
@@ -179,8 +160,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/controller/RoleController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
+            <state relative-caret-position="235">
+              <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../nutrition/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="152" column="17" selection-start-line="152" selection-start-column="17" selection-end-line="152" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -188,7 +178,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/controller/SearchController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
+            <state relative-caret-position="555">
               <caret line="74" column="41" selection-start-line="74" selection-start-column="41" selection-end-line="74" selection-end-column="41" />
             </state>
           </provider>
@@ -197,8 +187,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/controller/FileUploadController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="51" column="44" lean-forward="true" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
+            <state relative-caret-position="390">
+              <caret line="51" column="44" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -206,8 +196,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/service/ImageService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+            <state relative-caret-position="630">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
             </state>
           </provider>
         </entry>
@@ -215,8 +205,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/security/WebSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="108" column="1" lean-forward="true" selection-start-line="108" selection-start-column="1" selection-end-line="108" selection-end-column="1" />
+            <state relative-caret-position="166">
+              <caret line="88" column="3" selection-start-line="88" selection-start-column="3" selection-end-line="88" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -241,7 +231,6 @@
         <option value="$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/ServletInitializer.java" />
         <option value="$PROJECT_DIR$/../nutrition/src/main/appengine/app.yaml" />
         <option value="$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/model/User.java" />
-        <option value="$PROJECT_DIR$/../nutrition/pom.xml" />
         <option value="$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/service/NutritionEntryService.java" />
         <option value="$PROJECT_DIR$/../nutrition/src/main/resources/templates/login.html" />
         <option value="$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/controller/FileUploadController.java" />
@@ -253,6 +242,7 @@
         <option value="$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/controller/SwaggerConfig.java" />
         <option value="$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/exception/GlobalExceptionHandler.java" />
         <option value="$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/service/ImageService.java" />
+        <option value="$PROJECT_DIR$/../nutrition/pom.xml" />
         <option value="$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/security/WebSecurityConfig.java" />
       </list>
     </option>
@@ -282,9 +272,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -404,6 +391,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -462,18 +452,19 @@
       <option name="presentableId" value="Default" />
       <updated>1534637395709</updated>
       <workItem from="1534637396926" duration="6602000" />
-      <workItem from="1534699115548" duration="355000" />
+      <workItem from="1534699115548" duration="552000" />
+      <workItem from="1534702575749" duration="28000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6957000" />
+    <option name="totallyTimeSpent" value="7182000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="803" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -490,7 +481,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Database Console" order="8" weight="0.32994187" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32994187" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32994187" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
@@ -582,13 +573,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../nutrition/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="152" column="37" selection-start-line="152" selection-start-column="37" selection-end-line="152" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../nutrition/src/main/resources/templates/login.html" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/493e4619-49e0-40b5-bf0f-d84ef7da5a0b/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
@@ -633,71 +617,78 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/controller/NutritionController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
+        <state relative-caret-position="570">
           <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/controller/RegisterController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-70">
-          <caret line="38" column="80" selection-start-line="38" selection-start-column="80" selection-end-line="38" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/controller/RoleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/controller/SearchController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="74" column="41" selection-start-line="74" selection-start-column="41" selection-end-line="74" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/controller/SwaggerConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+        <state relative-caret-position="240">
+          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/exception/GlobalExceptionHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+        <state relative-caret-position="345">
+          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/controller/RegisterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="38" column="80" selection-start-line="38" selection-start-column="80" selection-end-line="38" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/controller/SearchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="74" column="41" selection-start-line="74" selection-start-column="41" selection-end-line="74" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/controller/FileUploadController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="51" column="44" lean-forward="true" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
+        <state relative-caret-position="390">
+          <caret line="51" column="44" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/service/ImageService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="630">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/controller/RoleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../nutrition/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="152" column="17" selection-start-line="152" selection-start-column="17" selection-end-line="152" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../nutrition/src/main/java/com/maxi/nutrition/security/WebSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="108" column="1" lean-forward="true" selection-start-line="108" selection-start-column="1" selection-end-line="108" selection-end-column="1" />
+        <state relative-caret-position="166">
+          <caret line="88" column="3" selection-start-line="88" selection-start-column="3" selection-end-line="88" selection-end-column="3" />
         </state>
       </provider>
     </entry>
