@@ -14,8 +14,4 @@ manual_scaling:
   instances: 1
 
 readiness_check:
-  check_interval_sec: 120
-  timeout_sec: 40
-  failure_threshold: 5
-  success_threshold: 5
-  app_start_timeout_sec: 1500
+  app_start_timeout_sec: 600
