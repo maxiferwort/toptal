@@ -1,0 +1,4 @@
+-Security
+
+If an user changes it username, he will need to re login. The token attach to the login attempt, is
+related to the current username, so if this field is changed, the token is no longer valid.
